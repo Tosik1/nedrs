@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог Nerds</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="catalog-header">
+      <div class="container">
+        <ul class="site-navigation">
+          <li class="nav header-logo">
+            <a href="index.html" class="logo" alt="Логотип">
+              <img src="img/nerds-logo.png" alt="Логотип" />
+            </a>
+          </li>
+          <li class="nav header-studio">
+            <a href="#">Студия</a>
+          </li>
+          <li class="nav header-clients">
+            <a href="#">Клиенты</a>
+          </li>
+          <li class="nav header-shop">
+            <a href="#">Магазин</a>
+          </li>
+          <li class="nav header-contacts">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <span class="user-bar">
+          <li class="header-bascet">Корзина</li>
+        </span>
+      </div>
+
+      <div class="container catalog">
+        <h1 class="catalog-title">
+          Магазин готовых шаблонов
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container catalog-list">
+        <div class="filter">
+          <div>
+            <label for="filter-price" class="title-filter">Стоимость:</label>
+            <input
+              type="range"
+              name=""
+              id="filter-price"
+              class="filter-price"
+            />
+          </div>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="setka-catalog">
+              <p class="title-filter">Cетка:</p>
+              <div class="form-radio">
+                <input
+                  type="radio"
+                  name="setka"
+                  id="setka-1"
+                  value="Адаптивная"
+                />
+                <label for="setka-1" class="">Адаптивная</label>
+              </div>
+              <div class="form-radio">
+                <input
+                  type="radio"
+                  name="setka"
+                  id="setka-2"
+                  value="Резиновая"
+                />
+                <label for="setka-2" class="">Резиновая</label>
+              </div>
+              <div class="form-radio">
+                <input
+                  type="radio"
+                  name="setka"
+                  id="setka-3"
+                  value="Фиксированная"
+                />
+                <label for="setka-3" class="">Фиксированная</label>
+              </div>
+            </div>
+
+            <div class="osobennosti-catalog">
+              <p class="title-filter">Особенности:</p>
+              <div>
+                <input type="checkbox" name="slider" id="check-1" />
+                <label for="check-1">Слайдер</label>
+              </div>
+              <div>
+                <input type="checkbox" name="block" id="check-2" />
+                <label for="check-2">Блок преимуществ</label>
+              </div>
+              <div>
+                <input type="checkbox" name="blog" id="check-3" />
+                <label for="check-3">Блог</label>
+              </div>
+              <div>
+                <input type="checkbox" name="galery" id="check-4" />
+                <label for="check-4">Галерея</label>
+              </div>
+              <div>
+                <input type="checkbox" name="stash" id="check-5" />
+                <label for="check-5">Корзина</label>
+              </div>
+            </div>
+
+            <div class="show-filter">
+              <input type="submit" value="Показать" id="show-filter" />
+
+              <!-- <input type="button" value="Показать" id="show-filter" /> -->
+            </div>
+          </form>
+        </div>
+
+        <div class="catalog-items">
+          <div class="catalog-p"><p class="title-filter">Сортировать:</p></div>
+          <div class="catalog-po">
+            <p class="category">По цене</p>
+            <p class="category">По типу</p>
+            <p class="category">По названию</p>
+            <p class="category">up</p>
+            <p class="category">down</p>
+          </div>
+          <div class="catalog-item">
+            <a href="sedona.html"><img src="/img/sedona.png" alt="Седона" /></a>
+          </div>
+          <div class="catalog-item">
+            <a href="sedona.html"><img src="/img/pink.png" alt="Седона" /></a>
+          </div>
+          <div class="catalog-item">
+            <a href="sedona.html"
+              ><img src="/img/borodinski.png" alt="Седона"
+            /></a>
+          </div>
+          <div class="catalog-item">
+            <a href="sedona.html"><img src="/img/mishka.png" alt="Седона" /></a>
+          </div>
+          <div class="catalog-item">
+            <a href="sedona.html"><img src="/img/kvast.png" alt="Седона" /></a>
+          </div>
+          <div class="catalog-item">
+            <a href="sedona.html"><img src="/img/aplus.png" alt="Седона" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="map">
+        <!-- <img src="img/map.png" alt="Карта города" class="map-pic" /> -->
+
+        <span class="map-adress">
+          <h3 class="map-adress-title">NЁRDS DESIGN STUDIO</h3>
+          <p class="map-adress-text">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p class="map-adress-tel">тел. +7 (812) 275-75-75</p>
+          <button class="button map-button">
+            <a href="#">Напишите нам</a>
+          </button>
+        </span>
+        <img
+          src="img/map-marker.png"
+          alt="Указатель на карте"
+          class="map-marker"
+        />
+      </div>
+    </main>
+
+    <footer class="container footer-main">
+      <span class="social-links">
+        <a href="vk.com" class="social-link">
+          <img src="img/vk-icon.png" alt="Вконтакте" class="social-vk" />
+        </a>
+        <a href="#" class="social-link">
+          <img src="img/fb-icon.svg" alt="Facebook" class="social-fb" />
+        </a>
+        <a href="#" class="social-link">
+          <img src="img/insta-icon.svg" alt="Instagram" class="social-inst" />
+        </a>
+      </span>
+
+      <span class="sale">
+        <h2 class="sale-title">Давайте дружить, это выгодно!</h2>
+        <p class="sale-text">Скидка 10% для друзей из социальных сетей.</p>
+      </span>
+    </footer>
+  </body>
+</html>
